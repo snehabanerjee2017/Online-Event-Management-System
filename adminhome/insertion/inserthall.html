@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Insert:Banquet Hall</title>
+	<link rel="stylesheet" type="text/css" href="css/insert_hall_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="insertbox">
+		<img src="css/hall_add.png" class="logo">
+		<h1>Add New Banquet Hall</h1>
+		<form action="inserthall.php" method="POST">
+			<p>Name</p><input type="text" name="hall_name" placeholder="Enter Name of the Banquet" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name of the Banquet'" required>
+			<p>Location</p><input type="text" name="hall_location" placeholder="Enter Hall Location" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Location'" required>
+			<p>Hall Area (in square feet)</p><input type="number" name="hall_area_sq_ft" placeholder="Enter Hall Area" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Area'" required>
+			<p>Capacity</p><input type="number" name="hall_capacity" placeholder="Enter Capacity" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Capacity'" required>
+			<p>Rent</p><input type="number" name="hall_rent" placeholder="Enter Hall Rent" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Rent'" required>
+			<p>Rating</p><input type="number" step="0.1" name="hall_rating" placeholder="Enter Hall Rating" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Rating'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Insert: Customer Details</title>
+	<link rel="stylesheet" type="text/css" href="css/insert_customer_styles.css">
+</head>
+<body>
+	<div class="insertbox">
+		<img src="css/add.png" class="logo">
+		<h1>Add Customer Details</h1>
+		<form action="insertcustomer.php" method="POST">
+			<p>Phone No.</p><input type="text" name="customer_phone_number" placeholder="Enter Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone Number'" required>
+			<p>Email Address</p><input type="text" name="customer_email" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address'" required>
+			<p>City</p><input type="text" name="customer_city" placeholder="Enter City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter City'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

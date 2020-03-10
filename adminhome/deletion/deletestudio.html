@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Delete:Studio</title>
+	<link rel="stylesheet" type="text/css" href="css/delete_studio_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="deletebox">
+		<img src="css/studio_delete.png" class="logo">
+		<h1>Delete a Studio</h1>
+		<form action="deletestudio.php" method="POST">
+			<p>Studio ID</p><input type="number" name="studio_id" placeholder="Enter Studio ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Studio ID'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

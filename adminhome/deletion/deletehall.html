@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Delete:Banquet Hall</title>
+	<link rel="stylesheet" type="text/css" href="css/delete_hall_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="deletebox">
+		<img src="css/hall_delete.png" class="logo">
+		<h1>Delete a Banquet Hall</h1>
+		<form action="deletehall.php" method="POST">
+			<p>Hall ID</p><input type="number" name="hall_id" placeholder="Enter Hall ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall ID'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

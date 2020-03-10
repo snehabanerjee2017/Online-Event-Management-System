@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/register_style.css">
+</head>
+<body>
+	<div class="registerbox">
+		<img src="css/avatar.jpg" class="avatar">
+		<h1>Event Manager</h1>
+		<form action="registration.php" method="POST">
+			<p>Name</p><input type="text" name="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required>
+			<p>Username</p><input type="text" name="username" placeholder="Enter Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Username'"required>
+			<p>Account Type</p><input type="text" name="type" placeholder="customer/admin (Mind the case)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'customer/admin (Mind the case)'"required>
+			<p>Create Password</p><input type="password" name="pw" placeholder="Create New Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Create New Password'"required>
+			<p>Confirm Password</p><input type="password" name="confirm_pw" placeholder="Re-enter the Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Re-enter the Password'"required>
+			<input type="submit" name="" value="Register">
+			<a href="login.html">Already have an account?</a>
+		</form>	
+	</div>
+</body>
+</html>

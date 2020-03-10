@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Delete:Decorator</title>
+	<link rel="stylesheet" type="text/css" href="css/delete_decorator_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="deletebox">
+		<img src="css/decorator_delete.jpg" class="logo">
+		<h1>Delete a Decorator</h1>
+		<form action="deletedecorator.php" method="POST">
+			<p>Decorator ID</p><input type="number" name="decorator_id" placeholder="Enter Decorator ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Decorator ID'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

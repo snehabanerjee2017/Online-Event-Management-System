@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Update:Caterer</title>
+	<link rel="stylesheet" type="text/css" href="css/update_caterer_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="updatebox">
+		<img src="css/caterer_update.jpg" class="logo">
+		<h1>Update Caterer Details</h1>
+		<form action="updatecaterer.php" method="POST">
+			<p>Caterer ID</p><input type="number" name="caterer_id" placeholder="Enter Caterer ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Caterer ID'" required>
+			<p><em>What do you want to change?</em></p><br>
+			<p>Name</p><input type="text" name="caterer_name" placeholder="Enter Name of the Caterer" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name of the Caterer'">
+			<p>Office Address</p><input type="text" name="caterer_office_address" placeholder="Enter Office Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Office Address'">
+			<p>Average Cost Per Plate</p><input type="number" name="caterer_cost_per_plate" placeholder="Enter Average Cost Per Plate" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Average Cost Per Plate'">
+			<p>Rating</p><input type="number" step="0.1" name="caterer_rating" placeholder="Enter Caterer Rating" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Caterer Rating'">
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

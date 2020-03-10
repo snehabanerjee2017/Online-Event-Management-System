@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Update Event Details</title>
+	<link rel="stylesheet" type="text/css" href="css/update_event_styles.css">
+</head>
+<body>
+	<div class='nav'>
+		<a href="../../customerhome.html">Home</a>
+		<a href="../../logout.php">Log Out</a>
+	</div>	
+	<div class="insertbox">
+		<h1>Update Event Details</h1>
+		<form action="updateevent.php" method="POST">
+			<p>Event ID</p><input type="number" name="event_id" placeholder="Enter Event ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Event ID'" required>
+			<p><em>What do you want to change?</em></p><br>			
+			<p>Event Type</p><input type="text" name="event_type" placeholder="Enter Event Type" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Event Type'">
+			<p>Event Date</p><input type="date" name="event_date" placeholder="Enter Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Date'" >
+			<p>Event Time</p><input type="time" name="event_time" placeholder="Enter Time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Time'" >
+			<p>Hall ID</p><input type="number" name="hall_id" placeholder="Enter Hall ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall ID'">
+			<p>Caterer ID</p><input type="number" name="caterer_id" placeholder="Enter Caterer ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Caterer ID'">
+			<p>Decorator ID</p><input type="number" name="decorator_id" placeholder="Enter Decorator ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Decorator ID'">
+			<p>Studio ID</p><input type="number" name="studio_id" placeholder="Enter Photography Studio ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Photography Studio ID'">
+			<p>Planner ID</p><input type="number" name="planner_id" placeholder="Enter Planner ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Planner ID'">
+			<p>No. of Guests</p><input type="number" name="guests" placeholder="Enter no. of Guests" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter no. of Guests'">
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

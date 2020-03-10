@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Delete:Planner</title>
+	<link rel="stylesheet" type="text/css" href="css/delete_planner_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="deletebox">
+		<img src="css/planner_delete.png" class="logo">
+		<h1>Delete a Planner</h1>
+		<form action="deleteplanner.php" method="POST">
+			<p>Planner ID</p><input type="number" name="planner_id" placeholder="Enter Planner ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Planner ID'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

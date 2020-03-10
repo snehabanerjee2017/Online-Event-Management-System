@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Insert:Studio</title>
+	<link rel="stylesheet" type="text/css" href="css/insert_studio_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="insertbox">
+		<img src="css/studio_add.png" class="logo">
+		<h1>Add New Studio</h1>
+		<form action="insertstudio.php" method="POST">
+			<p>Name</p><input type="text" name="studio_name" placeholder="Enter Name of the Studio" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name of the Studio'" required>
+			<p>Office Address</p><input type="text" name="studio_office_address" placeholder="Enter Office Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Office Address'" required>
+			<p>Average Rate</p><input type="number" name="studio_average_rate" placeholder="Enter Average Rate" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Average Rate'" required>
+			<p>Rating</p><input type="number" step="0.1" name="studio_rating" placeholder="Enter Studio Rating" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Studio Rating'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

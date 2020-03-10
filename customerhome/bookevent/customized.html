@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Request an Event</title>
+	<link rel="stylesheet" type="text/css" href="css/customized_styles.css">
+</head>
+<body>
+	<div class='nav'>
+		<a href="../../customerhome.html">Home</a>
+		<a href="../../logout.php">Log Out</a>
+	</div>	
+	<div class="insertbox">
+		<h1>Request an Event</h1>
+		<form action="customizedeventresponse.html" method="POST">
+			<p>Event Date</p><input type="date" name="event_date" placeholder="Enter Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Date'" required>
+			<p>Event Time</p><input type="time" name="event_time" placeholder="Enter Time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Time'">
+			<p>Description</p><input type="textarea" name="description" placeholder="Enter Description" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Description'">
+			<p>No. of Guests</p><input type="number" name="guests" placeholder="Enter no. of Guests" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter no. of Guests'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

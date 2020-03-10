@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Update:Banquet Hall</title>
+	<link rel="stylesheet" type="text/css" href="css/update_hall_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="updatebox">
+		<img src="css/hall_update.png" class="logo">
+		<h1>Update Banquet Hall Details</h1>
+		<form action="updatehall.php" method="POST">
+			<p>Hall ID</p><input type="number" name="hall_id" placeholder="Enter Hall ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall ID'" required>
+			<p><em>What do you want to change?</em></p><br>
+			<p>Name</p><input type="text" name="hall_name" placeholder="Enter Name of the Banquet" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name of the Banquet'">
+			<p>Location</p><input type="text" name="hall_location" placeholder="Enter Hall Location" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Location'">
+			<p>Hall Area (in square feet)</p><input type="number" name="hall_area_sq_ft" placeholder="Enter Hall Area" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Area'">
+			<p>Capacity</p><input type="number" name="hall_capacity" placeholder="Enter Capacity" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Capacity'">
+			<p>Rent</p><input type="number" name="hall_rent" placeholder="Enter Hall Rent" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Rent'">
+			<p>Rating</p><input type="number" step="0.1" name="hall_rating" placeholder="Enter Hall Rating" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Hall Rating'">
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

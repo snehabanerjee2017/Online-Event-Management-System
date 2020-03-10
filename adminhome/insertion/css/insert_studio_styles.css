@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(studio.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.nav a{
+	text-decoration: none;
+	color: #000;
+	background-color: #fff;
+	opacity: 0.8;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 110px;
+	height: 110px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 55px);
+}
+
+
+.insertbox{
+	width: 440px;
+	height: 500px;
+	background: #000;
+	opacity: 0.9;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%); 
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius: 10px;
+}
+
+
+
+.insertbox h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+}
+
+.insertbox p{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.insertbox input{
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 0.5px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	color: #fff;
+	font-size: 16px;
+}
+
+
+.insertbox input::placeholder {
+	color: #fff;
+	opacity: 0.5;
+	font-size: 14px;
+}
+
+.insertbox input[type="submit"]{
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.insertbox input[type="submit"]:hover {
+	cursor: pointer;
+	background: #808B96;
+	color: #000;
+	font-weight: bold;
+}
+
+.insertbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.insertbox a:hover {
+	color: #808B96;
+}
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Cancel Event</title>
+	<link rel="stylesheet" type="text/css" href="css/cancel_event_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../customerhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="deletebox">
+		<h1>Cancel an Event</h1>
+		<form action="cancelevent.php" method="POST">
+			<p>Event ID</p><input type="number" name="event_id" placeholder="Enter Event ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Event ID'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

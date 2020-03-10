@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Update:Studio</title>
+	<link rel="stylesheet" type="text/css" href="css/update_studio_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="updatebox">
+		<img src="css/studio_update.png" class="logo">
+		<h1>Update Studio Details</h1>
+		<form action="updatestudio.php" method="POST">
+			<p>Studio ID</p><input type="number" name="studio_id" placeholder="Enter Studio ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Studio ID'" required>
+			<p><em>What do you want to change?</em></p><br>
+			<p>Name</p><input type="text" name="studio_name" placeholder="Enter Name of the Studio" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name of the Studio'">
+			<p>Office Address</p><input type="text" name="studio_office_address" placeholder="Enter Office Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Office Address'">
+			<p>Average Rate</p><input type="number" name="studio_average_rate" placeholder="Enter Average Rate" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Average Rate'">
+			<p>Rating</p><input type="number" step="0.1" name="studio_rating" placeholder="Enter Studio Rating" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Studio Rating'">
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>

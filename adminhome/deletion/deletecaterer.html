@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'/>
+	<title>Delete:Caterer</title>
+	<link rel="stylesheet" type="text/css" href="css/delete_caterer_styles.css">
+</head>
+<body>
+	<div class='nav'><a href="../../adminhome.html">Home</a><a href="../../logout.php">Log Out</a> </div>	
+	<div class="deletebox">
+		<img src="css/caterer_delete.jpg" class="logo">
+		<h1>Delete a Caterer</h1>
+		<form action="deletecaterer.php" method="POST">
+			<p>Caterer ID</p><input type="number" name="caterer_id" placeholder="Enter Caterer ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Caterer ID'" required>
+			<input type="submit" value="Submit">
+		</form>	
+	</div>
+</body>
+</html>
